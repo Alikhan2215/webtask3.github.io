@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MAPPA</title>
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.jpg">
+  <link rel="stylesheet" type="text/css" href="/css/anime.css">
+</head>
+<body>
+
+<a href="HomePagePrac.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+
+<div class="container-md">
+
+  <nav class="navbar navbar-expand-lg">
+    <ul>
+      <li><a href="MAPPA Studio.html">MAPPA Studio</a></li>
+      <li><a href="Userjs.html">User's Page</a></li>
+      <li><a href="JujutsuKaisen.html">Jujutsu Kaisen</a></li>
+      <li><a href="AoT.html">Attack on Titan: The Final Season</a></li>
+      <li><a href="TheGodOfHighschool.html">The God of Highschool</a></li>
+      <li><a href="BananaFish.html">Banana Fish</a></li>
+      <li><a href="Vinland.html">Vinland Saga Season 2</a></li>
+      <li><a href="ChainsawMan.html">Chainsaw Man</a></li>
+    </ul>
+  </nav>
+
+  <div id="background-video">
+    <video autoplay muted loop>
+      <source src="vid/MAPPAMix.mkv">
+    </video>
+  </div>
+
+  <div class="card main_card card-default">
+    <script src="js/cardStyle.js"></script>
+    <div class="text-center">
+      <button id="style-switch-button" onclick="switchCardStyle()">Make more readable</button>
+    </div>
+    <h4 class="card-title"><br>Greatest works from MAPPA Studio <span class="badge bg-primary">New</span></h4>
+    <div class="card-body">
+      <ol class="list-group list-group-numbered text-dark my_list">
+        <li class="list-group-item list-group-item-dark">Best</li>
+        <li class="list-group-item list-group-item-dark">Studio</li>
+        <li class="list-group-item list-group-item-dark">Ever</li>
+      </ol>
+
+      <br>
+
+      <p>Explore the mesmerizing world of Mappa Studio's anime masterpieces. This collection features the
+        studio's most celebrated works, known for their stunning animation, compelling narratives, and
+        unforgettable characters. Dive into the realm of MAPPA's creativity and experience the magic of
+        Japanese animation at its finest.</p>
+
+      <p>Discover a diverse range of genres, from thrilling action-adventures to heartwarming slice-of-life
+        tales. Whether you're a seasoned anime enthusiast or a newcomer, there's something here for everyone.
+        Join us on a journey through the captivating worlds crafted by Mappa Studio, where every frame is
+        a work of art.</p>
+
+      <p>Stay updated with the latest news, reviews, and insights into the studio's projects. Immerse
+        yourself in the stories that have captured the hearts of fans worldwide. Start your anime adventure
+        today and let Mappa Studio's anime take you on an extraordinary ride.</p>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/mappa3.jpg" alt="Image 1" class="d-block w-50 mx-auto">
+          </div>
+          <div class="carousel-item">
+            <img src="img/mappa1.jpg" alt="Image 2" class="d-block w-50 mx-auto">
+          </div>
+          <div class="carousel-item">
+            <img src="img/mappa2.jpg" alt="Image 3" class="d-block w-50 mx-auto">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+      </div>
+    </div>
+    <h3>Are you ready for the exploration?</h3><br>
+    <div class="dropdown">
+      <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        YES, I AM READY!
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="JujutsuKaisen.html">Jujutsu Kaisen</a>
+        <a class="dropdown-item" href="AoT.html">Attack on Titan</a>
+        <a class="dropdown-item" href="Vinland.html">Vinland Saga</a>
+      </div>
+    </div>
+    <br>
+
+    <script src="js/form.js"></script>
+    <form>
+      <h2>Do you want to receive news?</h2>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <label for="passwd">Password:</label><br>
+      <input type="text" id="passwd" name="passwd"><br>
+      <div id="error-message"></div>
+      <button type="submit" class="myBtn">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>&copy; 2023 MAPPA</p>
+  <a href="https://www.instagram.com/mappastudios/?hl=en">Instagram</a><br>
+  <a href="https://www.mappa.co.jp/">Official Site</a>
+</div>
+
+
+</body>
+</html>
