@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User's Page</title>
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.jpg">
+  <link rel="stylesheet" type="text/css" href="/css/anime.css">
+</head>
+<body>
+
+<a href="HomePagePrac.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+
+<div class="container-md">
+
+  <nav class="navbar navbar-expand-lg">
+    <ul>
+      <li><a href="MAPPA Studio.html">MAPPA Studio</a></li>
+      <li><a href="Userjs.html">User's Page</a></li>
+      <li><a href="JujutsuKaisen.html">Jujutsu Kaisen</a></li>
+      <li><a href="AoT.html">Attack on Titan: The Final Season</a></li>
+      <li><a href="TheGodOfHighschool.html">The God of Highschool</a></li>
+      <li><a href="BananaFish.html">Banana Fish</a></li>
+      <li><a href="Vinland.html">Vinland Saga Season 2</a></li>
+      <li><a href="ChainsawMan.html">Chainsaw Man</a></li>
+    </ul>
+  </nav>
+
+  <div id="background-video">
+    <video autoplay muted loop>
+      <source src="vid/MAPPAMix.mkv">
+    </video>
+  </div>
+
+  <div class="card text-white main_card js">
+    <script src="js/main.js"></script>
+    <div onload="loadTimer()" style="margin-bottom: 30px">
+      <h1>Countdown Timer</h1>
+      <div id="timer">
+        <div id="time">00d 00h 00m 00s</div>
+      </div>
+      <input type="datetime-local" id="end-time" placeholder="Select end date and time">
+      <div class="text-center">
+        <button id="start" onclick="startTimer()">Start</button>
+        <button id="stop" onclick="stopTimer()">Stop</button>
+      </div>
+      <script src="js/timer.js"></script>
+    </div>
+
+
+
+    <h2>To-Do List</h2>
+    <label for="taskInput"></label><input type="text" id="taskInput" placeholder="Add a new task...">
+    <div class="text-center">
+      <button id="addTask">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+</div>
+
+
+<div class="footer jsf">
+  <p>&copy; 2023 MAPPA</p>
+  <a href="https://www.instagram.com/mappastudios/?hl=en">Instagram</a><br>
+  <a href="https://www.mappa.co.jp/">Official Site</a>
+</div>
+
+</body>
+</html>

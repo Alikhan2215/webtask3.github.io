@@ -1,0 +1,164 @@
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background: #006837;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0; /* Set padding to 0 to remove extra space */
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.central-block {
+  margin: 100px auto;
+  width: 60%;
+  border-radius: 16px;
+  background-color: rgba(16, 40, 79, 0.8);
+  padding: 20px;
+  text-align: left;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(16, 40, 79, 0.6);
+  color: #fff;
+}
+
+.jsf {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.central-block h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.central-block p {
+  font-size: 18px;
+  text-indent: 20px;
+}
+
+.central-block img {
+  float: left;
+  margin-right: 20px;
+}
+
+.main_card {
+  margin: 50px 50px 50px;
+  text-align: center;
+  background-color: rgba(16, 40, 79, 0.8);
+  border-radius: 16px;
+}
+.js {
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.my_list {
+  background-color: rgba(16, 40, 79, 0.8);
+  font-size: 20px;
+}
+
+.myBtn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#addTask {
+  margin-top: 20px;
+  width: 10%;
+}
+
+#start {
+  margin-top: 20px;
+  width: 10%;
+}
+
+#stop {
+  margin-top: 20px;
+  width: 10%;
+}
+
+#timer {
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #280;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#time {
+  font-weight: bold;
+}
+
+.card-default {
+  background-color: rgba(16, 40, 79, 0.8);
+  color: ghostwhite;
+}
+
+.card-alternate {
+  background-color: #E68A00;
+  color: black;
+}
